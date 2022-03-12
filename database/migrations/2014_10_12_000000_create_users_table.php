@@ -20,7 +20,7 @@ return new class extends Migration
             $table->boolean('checked');
             $table->longText('description');
             $table->string('interest')->nullable();
-            $table->string('date_of_birth');
+            $table->string('date_of_birth')->nullable();
             $table->string('email')->unique();
             $table->bigInteger('account');
             $table->timestamp('email_verified_at')->nullable();
